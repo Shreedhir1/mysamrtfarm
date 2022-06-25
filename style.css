@@ -1,0 +1,283 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+html{
+	scroll-behavior: smooth;
+} 
+
+
+:root{
+	--navbar-height: 59px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background:#2b5428;
+  padding-bottom: 0.5em;
+  padding-top: 0.4em;
+  border-bottom: 3px green solid;
+
+  
+}
+ul li {
+  display: block;
+  position: relative;
+  float: right;
+  background: #2b5428;
+  font-size: 1vw;
+  
+}
+li ul { display: none; }
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+  font-weight: bolder;
+  
+}
+ul li a:hover { background: #15f505; 
+color: black;
+}
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+li:hover li { float: none; }
+li:hover a {
+      background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: green;
+}
+li:hover li a:hover { background: #15f505; 
+color: black;
+border-bottom: 6px solid green;
+}
+.main-navigation li ul li { border-top: 0; }
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+ul:after { clear: both; }
+
+#bg img{
+  width: 100%;
+  height: auto;
+}
+#bar img{
+	width: 350px;
+	height: 660px;
+	position: absolute;
+	padding-left: 50px;
+      opacity: 0.6;
+}
+
+#bar a{
+	font-size: 4vw;
+	font-family: fantasy;
+	padding-left: 8%;
+	position: absolute;
+	top: 5em;
+	color: white;
+	text-shadow: black 1px 0 10px;
+}
+
+#bar p{
+	font-size: 3vw;
+	font-family: cursive;
+	padding-left: 8%;
+	position: absolute;
+	top: 7.8em;
+	color: #1EFF00;
+	text-shadow: black 1px 0 10px;
+}
+
+#bar b{
+	font-family: sans-serif;
+	padding-left: 9%;
+	position: absolute;
+	top: 21.2em;
+	font-size: 1.3vw;
+	color: white;
+}
+
+
+h1{
+	font-size: 200px;
+	padding-top: 800px;
+}
+
+#box p{
+      font-size: 6vw;
+      text-align: center;
+	margin-top: 10px;
+	color: #7BB900;
+	text-shadow: black 1px 2px 1px;
+}
+
+#p1 p{
+       margin-left: 33%;
+       margin-top: 2em;
+	 color: black;
+	 font-weight: bolder;
+	 font-size: 2vw;
+
+}
+#box d{
+	font-weight: bolder;
+	padding-left: 25%;
+      font-size: 1vw;
+}
+#info b{
+	font-weight: bolder;
+	padding-left: 25%;
+      
+}
+#info m{
+	padding-left: 20%;
+}
+
+
+#yoj p{
+	color: black;
+      margin: px;
+	font-family: fantasy;
+	font-size: 1.2vw;
+	margin-left: 20%;
+	font-weight: bolder;
+   
+}
+
+#ti {
+	color: red;
+}
+#yoj img{
+	width: 60%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
+.container {
+	display: inline-flex;
+	margin: 1em;
+	margin-left: 10%;
+	align-content: center;
+}
+
+ #yoj:hover {
+	background: #c9f0a0;
+
+	
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: lime;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+   text-align: center;
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+
+footer{
+	margin-top: 70px;
+}
